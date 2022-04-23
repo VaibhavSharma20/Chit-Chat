@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 const PORT = 3000||process.env.PORT;
-const bot="chat bot"
+const bot="Chit-Chat"
 app.use(express.static(path.join(__dirname,"public")));
 
 //when client connects
