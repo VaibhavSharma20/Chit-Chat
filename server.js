@@ -2,8 +2,8 @@ const express = require("express");
 const path = require("path");
 const http = require("http");
 const socketio = require("socket.io");
-const formatMessage = require("./utils/messages")
-const {userJoin,getCurrentUser, userLeave, getRoomUsers} = require("./utils/users")
+const formatMessage = require(__dirname+"/utils/messages")
+const {userJoin,getCurrentUser, userLeave, getRoomUsers} = require(__dirname+"/utils/users")
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
@@ -52,6 +52,10 @@ io.on('connection',function(socket){
     });
 });
 
-server.listen(PORT,function(){
-    console.log("Chat Server Running on port "+PORT);
+let port = process.env.PORT;
+if(port==null || port==""){
+    port=3000;
+}
+server.listen(port,function(){
+    console.log("Targets server started on port 3000");
 });
