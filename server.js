@@ -57,5 +57,5 @@ if(port==null || port==""){
     port=3000;
 }
 server.listen(port,function(){
-    console.log("Targets server started on port 3000");
+    console.log("Chit-Chat server started on port 3000");
 });

@@ -61,6 +61,7 @@ a {
 .chat-main {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
+	height: 75vh;
 }
 
 .chat-sidebar {
@@ -68,7 +69,6 @@ a {
 	color: #fff;
 	padding: 20px 20px 60px;
 	overflow-wrap: break-word;
-	max-height: 40rem;
 	overflow-y: scroll;
 }
 
