@@ -36,6 +36,12 @@ a {
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
+	border-radius: 28px;
+}
+
+.send{
+	margin: auto 2%;
+	padding: 1% 2%;
 }
 
 /* Chat Page */
@@ -45,6 +51,7 @@ a {
 	background: #fff;
 	margin: 30px auto;
 	overflow: hidden;
+	border-radius: 28px;
 }
 
 .chat-header {
@@ -97,7 +104,7 @@ a {
 	padding: 10px;
 	margin-bottom: 15px;
 	background-color: var(--light-color);
-	border-radius: 5px;
+	border-radius: 28px;
 }
 
 .chat-messages .message .meta {
@@ -128,24 +135,39 @@ a {
 	flex: 1;
 }
 
+#msg{
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+}
+
+#room-name{
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+}
+
 /* Join Page */
 .join-container {
 	max-width: 500px;
 	margin: 80px auto;
 	color: #fff;
+	
 }
 
 .join-header {
 	text-align: center;
 	padding: 20px;
 	background: var(--dark-color-a);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 28px;
+	border-top-right-radius: 28px;
 }
 
 .join-main {
 	padding: 30px 40px;
 	background: var(--dark-color-b);
+	border-bottom-right-radius:28px ;
+	border-bottom-left-radius:28px ;
 }
 
 .join-main p {
@@ -166,6 +188,7 @@ a {
 	padding: 5px;
 	height: 40px;
 	width: 100%;
+	border-radius: 28px;
 }
 
 .join-main select {
