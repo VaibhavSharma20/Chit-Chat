@@ -21,7 +21,11 @@ socket.on("roomUsers",function({room,users}){
 
 //messsage from Server
 socket.on("message", function (message) {
-    console.log(message);
+    console.log("Welcome to Programiz!");
+    let current = new Date();
+    let moment = current.toLocaleTimeString();
+    moment=moment.slice(0,4)+moment.slice(7,10);
+    message.time=moment;
     outputMessage(message);
 
     //Scrool
