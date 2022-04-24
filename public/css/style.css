@@ -44,6 +44,10 @@ a {
 	padding: 1% 2%;
 }
 
+.scrol{
+	overflow: hidden;
+}
+
 /* Chat Page */
 
 .chat-container {
