@@ -210,7 +210,7 @@ a {
 @media (max-width: 700px){
 
 	body{
-		overflow: hidden;
+		overflow: scroll;
 	}
 
 	.chat-main {
@@ -244,12 +244,12 @@ a {
 @media (max-width: 350px){
 
 	.chat-container{
-		overflow: hidden;
+		overflow: scroll;
 	}
 	
 	.chat-main {
 		display: block;
-		height: 60vh;
+		height: 70vh;
 		overflow:scroll
 	}
 
