@@ -208,11 +208,15 @@ a {
 }
 
 @media (max-width: 700px){
-	
+
+	body{
+		overflow: hidden;
+	}
+
 	.chat-main {
 		display: block;
 		height: 75vh;
-		overflow:scroll
+		overflow:scroll;
 	}
 
 	.chat-sidebar {
@@ -238,6 +242,10 @@ a {
 }
 
 @media (max-width: 350px){
+
+	.chat-container{
+		overflow: hidden;
+	}
 	
 	.chat-main {
 		display: block;

@@ -1,19 +1,14 @@
 
-#wrapper{
-  height: 100vh;
-}
 
 svg{
   position: absolute;
   top: 0px;
   right: 0px;
-  left: 0px; 
   z-index: -1; 
 }
 
 #home {
   clip-path: url(#cache);
-  background-size: auto auto;
 }
 
 #red {
