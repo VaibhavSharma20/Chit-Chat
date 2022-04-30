@@ -1,12 +1,15 @@
-#home-anim {
+
+#wrapper{
+  height: 100vh;
+}
+
+svg{
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: -1;
-  min-height: 100vh;
+  left: 0px; 
+  z-index: -1; 
 }
-
-/* style="enable-background:new 0 0 1820 1080;" */
 
 #home {
   clip-path: url(#cache);
@@ -59,14 +62,21 @@
 
 @keyframes show {
   0% {
-    opacity: 0.15;
+    opacity: 0.35;
   }
 
   50% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
 
   100% {
-    opacity: 0.15;
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 700px){
+  svg{
+    width: auto;
+    height: 100vh;
   }
 }
